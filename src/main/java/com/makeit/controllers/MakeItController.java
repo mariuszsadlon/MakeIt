@@ -1,0 +1,13 @@
+package com.makeit.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MakeItController {
+
+    @GetMapping("/hello")
+    public String getHelloMessage() {
+        return "Hello World";
+    }
+}
